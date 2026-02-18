@@ -129,6 +129,124 @@
   });
 </script>
 
+
+<!-- SERVICE MENU WITH SECTOR SELECTION -->
+<section style="margin-top:120px;padding:80px 20px;text-align:center;background:#ffffff;">
+
+  <div style="max-width:1000px;margin:0 auto;">
+
+    <button id="serviceMenuToggle"
+      style="padding:14px 32px;font-size:16px;font-weight:600;background:#111;color:#fff;border:none;border-radius:6px;cursor:pointer;transition:all .25s ease;">
+      Service Menu
+    </button>
+
+    <div id="serviceMenuPanel"
+      style="margin-top:50px;max-height:0;overflow:hidden;transition:max-height .5s ease,opacity .3s ease;opacity:0;">
+
+      <!-- Intro -->
+      <div style="margin-bottom:50px;">
+        <h2>Risk • Controls • Evidence Packs</h2>
+        <p style="max-width:700px;margin:20px auto;color:#555;line-height:1.6;">
+          Choose your sector — and integrity becomes governance.
+          One standard, three contexts. We translate ethics into operational governance:
+          accountability, controls, monitoring, and evidence.
+        </p>
+        <p style="font-size:13px;color:#888;">
+          Your choice is stored locally on your device (no personal data).
+        </p>
+      </div>
+
+      <!-- Sector Options -->
+      <div id="sectorOptions" style="display:flex;flex-wrap:wrap;gap:30px;justify-content:center;">
+
+        <div class="sectorCard" data-sector="healthcare"
+          style="flex:1 1 280px;border:1px solid #e6e6e6;padding:30px;border-radius:8px;background:#fafafa;cursor:pointer;transition:.3s;">
+          <h3>Healthcare / Life Sciences</h3>
+          <p style="font-size:14px;color:#666;">Dignity • Safety • Traceability</p>
+          <p style="font-size:14px;color:#444;margin-top:10px;">
+            Governance designed for high-impact decisions: validation discipline,
+            monitoring, escalation, and defensible documentation.
+          </p>
+        </div>
+
+        <div class="sectorCard" data-sector="saas"
+          style="flex:1 1 280px;border:1px solid #e6e6e6;padding:30px;border-radius:8px;background:#fafafa;cursor:pointer;transition:.3s;">
+          <h3>SaaS / B2B Tech</h3>
+          <p style="font-size:14px;color:#666;">Trust • Accountability • Scale</p>
+          <p style="font-size:14px;color:#444;margin-top:10px;">
+            Controls and evidence packs that reduce procurement friction
+            and strengthen customer trust—without slowing delivery.
+          </p>
+        </div>
+
+        <div class="sectorCard" data-sector="public"
+          style="flex:1 1 280px;border:1px solid #e6e6e6;padding:30px;border-radius:8px;background:#fafafa;cursor:pointer;transition:.3s;">
+          <h3>Public Sector</h3>
+          <p style="font-size:14px;color:#666;">Accountability • Transparency • Human oversight</p>
+          <p style="font-size:14px;color:#444;margin-top:10px;">
+            Governance aligned to public interest: explainable decisions,
+            oversight, and durable proof.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Packages (Hidden Initially) -->
+      <div id="packageOptions" style="margin-top:60px;display:none;">
+
+        <h2 style="margin-bottom:30px;">Core Packages</h2>
+
+        <div style="border:1px solid #e6e6e6;padding:30px;margin-bottom:20px;border-radius:8px;background:#fafafa;text-align:left;">
+          <h3>Governance Sprint</h3>
+          <p style="color:#666;font-size:14px;">2 Weeks</p>
+          <p><strong>From ,500 CAD</strong></p>
+        </div>
+
+        <div style="border:1px solid #e6e6e6;padding:30px;margin-bottom:20px;border-radius:8px;background:#fafafa;text-align:left;">
+          <h3>Risk Assessment + Controls Build</h3>
+          <p style="color:#666;font-size:14px;">4–6 Weeks</p>
+          <p><strong>From ,000 CAD</strong></p>
+        </div>
+
+        <div style="border:1px solid #e6e6e6;padding:30px;border-radius:8px;background:#fafafa;text-align:left;">
+          <h3>Fractional AI Governance Lead</h3>
+          <p style="color:#666;font-size:14px;">Minimum 3 Months</p>
+          <p><strong>From ,000 CAD / month</strong></p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<script>
+  const toggleButton = document.getElementById("serviceMenuToggle");
+  const panel = document.getElementById("serviceMenuPanel");
+  const sectorCards = document.querySelectorAll(".sectorCard");
+  const packageOptions = document.getElementById("packageOptions");
+
+  toggleButton.addEventListener("click", function () {
+    if (panel.style.maxHeight === "0px" || panel.style.maxHeight === "") {
+      panel.style.maxHeight = "2000px";
+      panel.style.opacity = "1";
+    } else {
+      panel.style.maxHeight = "0";
+      panel.style.opacity = "0";
+    }
+  });
+
+  sectorCards.forEach(card => {
+    card.addEventListener("click", function () {
+      localStorage.setItem("selectedSector", this.dataset.sector);
+      packageOptions.style.display = "block";
+      packageOptions.scrollIntoView({ behavior: "smooth" });
+    });
+  });
+</script>
+
 </body>
 </html>
+
 
