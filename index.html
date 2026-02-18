@@ -1,165 +1,312 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIGOVv.3 | AI Governance Consultant</title>
-    <meta name="description" content="Practical AI governance built for real operating constraints—focused on evidence, accountability, and audit readiness.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIGOVv.3 | AI Governance Consultant</title>
+  <meta name="description" content="Practical AI governance built for real operating constraints—focused on evidence, accountability, and audit readiness.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-
-<header class="site-header">
+  <header class="site-header">
     <div class="nav">
-        <div class="logo">[Your Name] · AI Governance Consultant</div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="about.html">About</a>
-            <a href="faq.html">FAQ</a>
-            <a href="tool.html">AI Readiness Check</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+      <div class="logo">[Your Name] · AI Governance Consultant</div>
+      <nav>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="tool.html">AI Readiness Check</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-</header>
+  </header>
 
-<main class="container">
+  <main class="container">
+    <!-- DASHBOARD HERO -->
+    <section class="dash-shell" aria-label="Governance Console">
+      <div class="dash-bg" aria-hidden="true"></div>
 
-    <!-- HERO SECTION -->
-    <section>
-
-        <h1>AI governance is now a business requirement</h1>
-
-        <p>
-            If your organization deploys AI, you’re expected to prove control—not just good intentions.
-            Regulators, enterprise customers, and internal audit teams increasingly ask for documented risks,
-            clear accountability, defined approvals, and evidence that oversight works in practice.
-        </p>
-
-        <p>
-            The most expensive time to build governance is after an audit, a procurement review, or an incident.
-            A practical governance program keeps you defensible while you keep delivering.
-        </p>
-
-        <div>
-            <a class="button primary" href="tool.html">Check your readiness</a>
-            <a class="button" href="services.html">Explore services</a>
-            <a class="button" href="contact.html">Get in touch</a>
+      <!-- Sidebar -->
+      <aside class="dash-side" aria-label="Sections">
+        <div class="side-top">
+          <div class="side-badge">
+            <span class="dot"></span>
+            <span>Governance Console</span>
+          </div>
         </div>
 
-        <p class="small-note">
+        <div class="side-nav">
+          <a class="side-item active" href="#offer">
+            <span class="icon">▦</span>
+            <span>Policies</span>
+          </a>
+          <a class="side-item" href="#why">
+            <span class="icon">⚑</span>
+            <span>Risks</span>
+          </a>
+          <a class="side-item" href="#support">
+            <span class="icon">☑</span>
+            <span>Audits</span>
+          </a>
+          <a class="side-item" href="#offer">
+            <span class="icon">◴</span>
+            <span>Monitoring</span>
+          </a>
+        </div>
+
+        <div class="side-card">
+          <div class="side-card-title">Recent activity</div>
+          <div class="mini-row">
+            <span class="pill teal">Security audit</span>
+            <span class="muted">2 days ago</span>
+          </div>
+          <div class="mini-row">
+            <span class="pill butter">Risk registers</span>
+            <span class="muted">5 days ago</span>
+          </div>
+          <div class="mini-row">
+            <span class="pill coral">Procurement review</span>
+            <span class="muted">8 days ago</span>
+          </div>
+        </div>
+
+        <div class="side-card subtle">
+          <div class="side-card-title">Console tip</div>
+          <p class="muted small">
+            Keep governance lightweight, but measurable. Evidence beats intention.
+          </p>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <div class="dash-main">
+        <!-- Top bar -->
+        <div class="dash-top">
+          <div class="top-left">
+            <button class="icon-btn" aria-label="Back">‹</button>
+            <div class="search">
+              <span class="search-ic">⌕</span>
+              <input aria-label="Search" placeholder="Search controls, policies, evidence…" />
+            </div>
+          </div>
+
+          <div class="top-right">
+            <span class="chip">Status: Operational</span>
+            <span class="avatar" aria-label="Profile"></span>
+          </div>
+        </div>
+
+        <!-- Title row -->
+        <div class="dash-title">
+          <h1>AI governance is now a business requirement</h1>
+          <p class="subtitle">
             Practical AI governance built for real operating constraints—focused on evidence, accountability,
             and what auditors and buyers actually review.
-        </p>
+          </p>
+        </div>
 
+        <!-- Grid -->
+        <div class="dash-grid">
+          <!-- Narrative / hero copy -->
+          <article class="panel panel--wide">
+            <h2 class="panel-title">Why this exists</h2>
+
+            <p>
+              If your organization deploys AI, you’re expected to prove control—not just good intentions.
+              Regulators, enterprise customers, and internal audit teams increasingly ask for documented risks,
+              clear accountability, defined approvals, and evidence that oversight works in practice.
+            </p>
+
+            <p>
+              The most expensive time to build governance is after an audit, a procurement review, or an incident.
+              A practical governance program keeps you defensible while you keep delivering.
+            </p>
+
+            <div class="cta-row">
+              <a class="button primary" href="tool.html">Check your readiness</a>
+              <a class="button" href="services.html">Explore services</a>
+              <a class="button" href="contact.html">Get in touch</a>
+            </div>
+
+            <p class="small-note">
+              Practical AI governance built for real operating constraints—focused on evidence, accountability,
+              and what auditors and buyers actually review.
+            </p>
+          </article>
+
+          <!-- AI Readiness -->
+          <section class="panel">
+            <h2 class="panel-title">AI Readiness Score</h2>
+
+            <div class="score">
+              <div class="ring" role="img" aria-label="AI readiness score 79 percent">
+                <div class="ring-inner">
+                  <div class="score-num">79<span>%</span></div>
+                  <div class="muted small">Progress</div>
+                </div>
+              </div>
+
+              <div class="score-list">
+                <div class="kv"><span>Policies</span><strong>32</strong></div>
+                <div class="kv"><span>Registers</span><strong>12</strong></div>
+                <div class="kv"><span>Controls</span><strong>76</strong></div>
+                <div class="kv"><span>Open Findings</span><strong class="warn">5</strong></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Measures -->
+          <section class="panel">
+            <h2 class="panel-title">Measures</h2>
+            <div class="metric">
+              <div class="metric-head">
+                <span>Documentation Coverage</span><strong>92%</strong>
+              </div>
+              <div class="bar"><span style="width:92%"></span></div>
+            </div>
+
+            <div class="metric">
+              <div class="metric-head">
+                <span>Monitoring Uptime</span><strong>99%</strong>
+              </div>
+              <div class="bar teal"><span style="width:99%"></span></div>
+            </div>
+
+            <div class="metric">
+              <div class="metric-head">
+                <span>Approval SLA</span><strong>78%</strong>
+              </div>
+              <div class="bar butter"><span style="width:78%"></span></div>
+            </div>
+          </section>
+
+          <!-- Risk Exposure -->
+          <section class="panel">
+            <h2 class="panel-title">Risk Exposure</h2>
+
+            <div class="metric">
+              <div class="metric-head">
+                <span>Documentation</span><strong>85%</strong>
+              </div>
+              <div class="bar"><span style="width:85%"></span></div>
+            </div>
+
+            <div class="metric">
+              <div class="metric-head">
+                <span>Accountability</span><strong>74%</strong>
+              </div>
+              <div class="bar sage"><span style="width:74%"></span></div>
+            </div>
+
+            <div class="metric">
+              <div class="metric-head">
+                <span>Evidence</span><strong>91%</strong>
+              </div>
+              <div class="bar teal"><span style="width:91%"></span></div>
+            </div>
+          </section>
+
+          <!-- Audit trail -->
+          <section class="panel panel--wide">
+            <h2 class="panel-title">Audit Trail</h2>
+
+            <div class="table">
+              <div class="row head">
+                <span>Event</span><span>When</span><span>Result</span>
+              </div>
+
+              <div class="row">
+                <span>Security Audit</span><span class="muted">5 days ago</span><span class="ok">Passed</span>
+              </div>
+              <div class="row">
+                <span>System Audit</span><span class="muted">12 days ago</span><span class="warn">Major findings</span>
+              </div>
+              <div class="row">
+                <span>Procurement Review</span><span class="muted">36 days ago</span><span class="ok">Passed</span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
     </section>
-
 
     <!-- WHY THIS MATTERS -->
-    <section>
-
-        <h2>Why this matters now</h2>
-
-        <ul>
-            <li>
-                <strong>Requirements are moving faster than regulation.</strong>
-                Procurement, contracts, and client assurance requests often set standards before laws do.
-            </li>
-
-            <li>
-                <strong>Auditability is becoming the baseline.</strong>
-                Teams must show how AI systems are documented, monitored, and reviewed over time—not just that policies exist.
-            </li>
-
-            <li>
-                <strong>Accountability has shifted upward.</strong>
-                When AI fails, consequences can be legal, financial, operational, and reputational—and responsibility increasingly sits with leadership.
-            </li>
-        </ul>
-
+    <section id="why" class="content">
+      <h2>Why this matters now</h2>
+      <ul>
+        <li>
+          <strong>Requirements are moving faster than regulation.</strong>
+          Procurement, contracts, and client assurance requests often set standards before laws do.
+        </li>
+        <li>
+          <strong>Auditability is becoming the baseline.</strong>
+          Teams must show how AI systems are documented, monitored, and reviewed over time—not just that policies exist.
+        </li>
+        <li>
+          <strong>Accountability has shifted upward.</strong>
+          When AI fails, consequences can be legal, financial, operational, and reputational—and responsibility increasingly sits with leadership.
+        </li>
+      </ul>
     </section>
-
 
     <!-- HOW I SUPPORT -->
-    <section>
+    <section id="support" class="content">
+      <h2>How I support organizations</h2>
+      <p>
+        I help teams implement AI governance that holds up under scrutiny and still fits how work gets done.
+      </p>
 
-        <h2>How I support organizations</h2>
+      <p><strong>Typical support includes:</strong></p>
+      <ul>
+        <li>Mapping AI use cases, ownership, and risk exposure</li>
+        <li>Building governance that generates usable evidence, not paperwork</li>
+        <li>Preparing for procurement reviews, audits, and regulatory questions</li>
+      </ul>
 
-        <p>
-            I help teams implement AI governance that holds up under scrutiny and still fits how work gets done.
-        </p>
-
-        <p><strong>Typical support includes:</strong></p>
-
-        <ul>
-            <li>Mapping AI use cases, ownership, and risk exposure</li>
-            <li>Building governance that generates usable evidence, not paperwork</li>
-            <li>Preparing for procurement reviews, audits, and regulatory questions</li>
-        </ul>
-
-        <p>
-            The goal isn’t to slow innovation. It’s to make AI systems understandable, accountable, and sustainable.
-        </p>
-
+      <p>
+        The goal isn’t to slow innovation. It’s to make AI systems understandable, accountable, and sustainable.
+      </p>
     </section>
-
 
     <!-- OFFER -->
-    <section>
+    <section id="offer" class="content">
+      <h2>My offer covers</h2>
 
-        <h2>My offer covers</h2>
+      <h3>Ownership and approvals (RACI + decision paths)</h3>
+      <p>Define decision rights, required sign-offs, and escalation so accountability is explicit and defensible.</p>
 
-        <h3>Ownership and approvals (RACI + decision paths)</h3>
-        <p>
-            Define decision rights, required sign-offs, and escalation so accountability is explicit and defensible.
-        </p>
+      <h3>Inventory, documentation, and decision records</h3>
+      <p>Maintain a practical view of what AI exists, where it’s used, what it impacts, and why key decisions were made.</p>
 
-        <h3>Inventory, documentation, and decision records</h3>
-        <p>
-            Maintain a practical view of what AI exists, where it’s used, what it impacts, and why key decisions were made.
-        </p>
+      <h3>Controls, testing evidence, and audit trail</h3>
+      <p>Implement controls that can be tested and evidenced—so you can demonstrate governance is operating, not aspirational.</p>
 
-        <h3>Controls, testing evidence, and audit trail</h3>
-        <p>
-            Implement controls that can be tested and evidenced—so you can demonstrate governance is operating, not aspirational.
-        </p>
+      <h3>Monitoring, incidents, and remediation</h3>
+      <p>Establish ongoing oversight: performance monitoring, issue tracking, incident response, and corrective actions.</p>
 
-        <h3>Monitoring, incidents, and remediation</h3>
-        <p>
-            Establish ongoing oversight: performance monitoring, issue tracking, incident response, and corrective actions.
-        </p>
+      <h3>Third-party and vendor governance</h3>
+      <p>Apply governance expectations to suppliers and tools to support due diligence and defensible procurement.</p>
 
-        <h3>Third-party and vendor governance</h3>
-        <p>
-            Apply governance expectations to suppliers and tools to support due diligence and defensible procurement.
-        </p>
-
-        <h3>Procurement questionnaires and assurance responses</h3>
-        <p>
-            Produce clear, consistent, evidence-based responses to buyers, auditors, and client security/compliance teams.
-        </p>
-
+      <h3>Procurement questionnaires and assurance responses</h3>
+      <p>Produce clear, consistent, evidence-based responses to buyers, auditors, and client security/compliance teams.</p>
     </section>
-
 
     <!-- REFERENCES -->
-    <section>
-
-        <h2>References (Canada & Québec)</h2>
-        <p>(Keep your links as-is.)</p>
-
+    <section class="content">
+      <h2>References (Canada & Québec)</h2>
+      <p>(Keep your links as-is.)</p>
     </section>
+  </main>
 
-</main>
-
-
-<footer class="site-footer">
+  <footer class="site-footer">
     © [Your Name] — AI Governance Consultant
-</footer>
-
+  </footer>
 </body>
 </html>
