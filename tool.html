@@ -1,0 +1,21 @@
+
+<script>
+function calculateScore() {
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  const total = checkboxes.length;
+  let checked = 0;
+
+  checkboxes.forEach(cb => {
+    if (cb.checked) checked++;
+  });
+
+  const percent = Math.round((checked / total) * 100);
+  document.getElementById("score").innerText = percent + "%";
+
+  let risk = "High";
+  if (percent >= 70) risk = "Low";
+  else if (percent >= 40) risk = "Moderate";
+
+  document.getElementById("risk").innerText = risk;
+}
+</script>
