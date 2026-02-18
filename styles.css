@@ -565,3 +565,68 @@ p,
 ul {
   max-width: 640px;
 }
+/* Margin notes */
+@media (min-width: 1100px) {
+  section {
+    position: relative;
+  }
+
+  section::after {
+    content: attr(data-note);
+    position: absolute;
+    right: -180px;
+    top: 10px;
+    width: 160px;
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--muted);
+    opacity: 0.6;
+  }
+}
+/* Institutional numbering */
+body {
+  counter-reset: section;
+}
+
+section {
+  counter-increment: section;
+}
+
+section h2::before {
+  content: counter(section, decimal-leading-zero) " ";
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+/* Typographic scale grid */
+html {
+  font-size: 16px;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.125rem; }
+p  { font-size: 1rem; }
+
+section {
+  margin-bottom: 4rem;
+}
+/* Slow editorial reveal */
+section {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: editorialFade 0.8s ease forwards;
+}
+
+section:nth-of-type(2) { animation-delay: 0.1s; }
+section:nth-of-type(3) { animation-delay: 0.2s; }
+section:nth-of-type(4) { animation-delay: 0.3s; }
+
+@keyframes editorialFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
