@@ -368,3 +368,68 @@ h2::before {
 section {
   padding-left: 2px;
 }
+main {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* Hero tension */
+main > section:first-of-type {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+/* Headline — stronger editorial feel */
+h1 {
+  font-weight: 700;
+  font-size: clamp(36px, 4vw, 52px);
+  line-height: 1.04;
+  letter-spacing: -0.045em;
+  margin-bottom: 18px;
+}
+
+/* Slight first-line tension simulation */
+h1::first-line {
+  letter-spacing: -0.055em;
+}
+
+/* Section titles refined */
+h2 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-top: 48px;
+  margin-bottom: 14px;
+}
+
+/* Paragraph refinement */
+p {
+  font-size: 16.2px;
+  line-height: 1.52;
+  letter-spacing: -0.01em;
+  margin-bottom: 12px;
+  max-width: 62ch;
+}
+
+/* Reduce visual noise */
+ul {
+  margin-top: 6px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Subtle editorial restraint */
+.button {
+  margin-top: 14px;
+  padding: 14px 24px;
+}
+
+/* Footer — tighter and cleaner */
+.site-footer {
+  margin-top: 70px;
+  padding: 28px 0;
+}
