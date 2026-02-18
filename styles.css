@@ -340,3 +340,31 @@ p {
   font-size: 14px;
   letter-spacing: 0.04em;
 }
+main {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+/* Improve measure */
+p {
+  max-width: 65ch;
+}
+
+/* Optical heading alignment */
+h1,
+h2,
+h3 {
+  text-indent: -0.02em;
+}
+
+/* Subtle hanging punctuation simulation */
+h1::before,
+h2::before {
+  content: "";
+  margin-left: -0.04em;
+}
+
+/* Slight left optical compensation */
+section {
+  padding-left: 2px;
+}
