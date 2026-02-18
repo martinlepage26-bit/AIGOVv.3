@@ -1,4 +1,4 @@
-ï»¿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -15,7 +15,7 @@
 
 <header class="site-header">
   <div class="nav">
-    <div class="logo">[Your Name] Â· AI Governance Consultant</div>
+    <div class="logo">[Your Name] · AI Governance Consultant</div>
     <nav>
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
@@ -37,7 +37,7 @@
 <section>
 <h2>Assessment & Advisory</h2>
 
-<p>A focused review of how AI is currently used â€” and where governance, risk, and compliance exposure may exist before it surfaces through audit or incident.</p>
+<p>A focused review of how AI is currently used — and where governance, risk, and compliance exposure may exist before it surfaces through audit or incident.</p>
 
 <ul>
 <li>Inventory and prioritization of AI use cases</li>
@@ -51,7 +51,7 @@
 <section>
 <h2>Governance Framework Implementation</h2>
 
-<p>Translate governance requirements into operational tools that teams can actually use â€” without slowing delivery.</p>
+<p>Translate governance requirements into operational tools that teams can actually use — without slowing delivery.</p>
 
 <ul>
 <li>Use-case documentation templates</li>
@@ -65,8 +65,70 @@
 </main>
 
 <footer class="site-footer">
-Â© [Your Name] â€” AI Governance Consultant
+© [Your Name] — AI Governance Consultant
 </footer>
+
+
+<!-- SERVICE MENU SECTION -->
+<section style="margin-top:120px;padding:80px 20px;text-align:center;background:#ffffff;">
+
+  <div style="max-width:900px;margin:0 auto;">
+
+    <button id="serviceMenuToggle"
+      style="padding:14px 32px;font-size:16px;font-weight:600;background:#111;color:#fff;border:none;border-radius:6px;cursor:pointer;transition:all .25s ease;">
+      Service Menu
+    </button>
+
+    <div id="serviceMenuPanel"
+      style="margin-top:40px;max-height:0;overflow:hidden;transition:max-height .4s ease,opacity .3s ease;opacity:0;">
+
+      <div style="border:1px solid #e6e6e6;padding:32px;margin-bottom:24px;border-radius:8px;text-align:left;background:#fafafa;">
+        <h3>Governance Sprint</h3>
+        <p style="color:#666;font-size:14px;">2 Weeks</p>
+        <p><strong>From ,500 CAD</strong></p>
+        <p style="font-size:14px;color:#444;line-height:1.6;">
+          Rapid AI risk identification and governance foundation setup.
+        </p>
+      </div>
+
+      <div style="border:1px solid #e6e6e6;padding:32px;margin-bottom:24px;border-radius:8px;text-align:left;background:#fafafa;">
+        <h3>Risk Assessment + Controls Build</h3>
+        <p style="color:#666;font-size:14px;">4–6 Weeks</p>
+        <p><strong>From ,000 CAD</strong></p>
+        <p style="font-size:14px;color:#444;line-height:1.6;">
+          Lifecycle governance design with audit defensibility.
+        </p>
+      </div>
+
+      <div style="border:1px solid #e6e6e6;padding:32px;margin-bottom:24px;border-radius:8px;text-align:left;background:#fafafa;">
+        <h3>Fractional AI Governance Lead</h3>
+        <p style="color:#666;font-size:14px;">Minimum 3 Months</p>
+        <p><strong>From ,000 CAD / month</strong></p>
+        <p style="font-size:14px;color:#444;line-height:1.6;">
+          Executive-level governance oversight and structured risk supervision.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<script>
+  const toggleButton = document.getElementById("serviceMenuToggle");
+  const panel = document.getElementById("serviceMenuPanel");
+
+  toggleButton.addEventListener("click", function () {
+    if (panel.style.maxHeight === "0px" || panel.style.maxHeight === "") {
+      panel.style.maxHeight = "1000px";
+      panel.style.opacity = "1";
+    } else {
+      panel.style.maxHeight = "0";
+      panel.style.opacity = "0";
+    }
+  });
+</script>
 
 </body>
 </html>
+
